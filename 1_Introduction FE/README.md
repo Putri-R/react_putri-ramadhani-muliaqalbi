@@ -7,3 +7,5 @@ Summary Live Session 1 - Introduction Front-End
 - Version Control adalah membuat beberapa versi dari sebuah program yang telah dibuat. Version Control System berfungsi untuk memudahkan dalam melakukan dokumentasi atau bekerja secara team. Konsep kerjanya dengan memanfaatkan git (untuk version control service) dan GitHub (untuk repositorynya). git berfokus pada proyek pengembangan aplikasi dengan memanfaatkan comment line dan GitHub untuk developer mengakses fitur git di website tersebut.
 - Web Security, yaitu dengan memanfaatkan fitur HTTPS. Kemudian dalam penyimpanan password dan username tanpa penanganan yang baik, maka securitynya kurang aman. Sehingga sesbuah website harus dibuat dengan baik dan aman.
 -  Package Manager, yaitu untuk memudahkan pengguna dalam pengaturan paket perangkat lunak. Ada 2, yaitu npm dan yarn. Paket adalah sebuah berkas program yang dikompilasi agar siap dieksekusi oleh sistem.
+
+Terima Kasih
