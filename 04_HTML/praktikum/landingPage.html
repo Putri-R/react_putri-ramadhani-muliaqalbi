@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        nav{
+            height: 60px;
+            flex-shrink: 0;
+            box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.20);
+        }
+        nav h1 {
+            color: var(--bs-dark, #212529);
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: -0.32px;
+            margin-left: 16px;
+        }
+        .description{
+            margin-left: 94px;
+        }
+        .description p{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            display: flex;
+            width: 561.419px;
+            height: 125px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            margin: 114.2px 0px 0px;
+        }
+        .description span{
+            color: rgba(0, 0, 0, 0.60);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.8px; /* 120% */
+            display: flex;
+            width: 594.638px;
+            height: 63.797px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .btn{
+            margin-top: 47.8px;
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 25px;
+        }
+        .btn button{
+            cursor: pointer;
+        }
+        .get-started{
+            display: flex;
+            padding: 9px 28.359px 12px 28px;
+            align-items: flex-start;
+            background-color: white;
+            border-radius: 1px;
+            border: 1px solid #000;
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .watch-now{
+            display: flex;
+            padding: 9px 28.359px 12px 28px;
+            align-items: flex-start;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            letter-spacing: 1px;
+            border: transparent;
+            text-decoration: none;
+        }
+        .description img{
+            width: 636px;
+            height: 527px;
+            flex-shrink: 0;
+            margin-left: -40px;
+            margin-top: 21.21px;
+        }
+        .join-us h1{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+            padding-bottom: 15px;
+        }
+        .join-us form{
+            display: flex;
+            width: 522.481px;
+            height: 20px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            gap: 15px;
+        }
+        .join-us label{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22.5px; /* 150% */
+        }
+        footer p{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px; /* 150% */
+            padding-top: 7px;
+            margin-left: 94px;
+        }
+        footer .arsha{
+            font-weight: 700;
+            margin-left: 0px;
+        }
+        footer span{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 19.5px; /* 150% */
+            margin-top: 20px;
+            margin-left: 94px;
+        }
+        footer{
+            margin-top: 35px;
+            height: 60px;
+            flex-shrink: 0;
+            box-shadow: 2px -2px 0px 0px rgba(0, 0, 0, 0.20);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Simple header</h1>
+    </nav>
+
+    <div class="description">
+        <!-- judul -->
+        <p>Better Solutions For Your Business</p>
+        <!-- deskripsi judul -->
+        <span>We are team of talented designers making websites with Bootstrap</span>
+
+        <!-- button pertama -->
+        <div class="btn">
+            <!-- Soal explorasi -->
+            <!-- menambahkan href di button get started sehingga dapat berpindah halaman ke Create Account -->
+            <a class="get-started" type="button" href="createAccount.html">Get Started</a>
+            <a class="watch-now" type="button" href="">Watch Now</a>
+        </div>
+
+        <!-- gambar -->
+        <div>
+            <img src="img-asset-html/hero-img.png.png" alt="hero-img">
+        </div>
+
+        <!-- join our newsletter -->
+        <div class="join-us">
+            <h1>Join Our Newsletter</h1>
+
+            <!-- input data -->
+            <form action="">
+                <label for="">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</label>
+                <input type="text" required>
+            </form>
+
+            <!-- button submit -->
+            <div class="btn">
+                <!-- Soal explorasi -->
+                <!-- menambahkan href di button get started sehingga dapat berpindah halaman ke Create Account -->
+                <a class="get-started" type="button" href="createAccount.html">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <footer>
+        <p>© Copyright <span class="arsha">Arsha</span>. All Rights Reserved</p>
+        <span>Designed by BootstrapMade</span>
+    </footer>
+</body>
+</html>

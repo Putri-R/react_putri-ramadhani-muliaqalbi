@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product Page</title>
+    <style>
+        h1{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-weight: 400;
+        }
+        h2{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+        label, .product-freshness, .submit{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 6px;
+        }
+        .product-input{
+            width: 159px;
+            height: 14px;
+            border: 0.5px solid #000;
+        }
+        .product-option{
+            display: block;
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        select{
+            width: 71px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        .choose-image button, .submit button, .product-category option, .product-category .category{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .price input{
+            width: 50px;
+            border: 1px solid #000;
+        }
+        .choose-image button, .submit button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- judul utama -->
+    <h1>Create Product</h1>
+    <!-- judul -->
+    <h2>Detail Product</h2>
+
+    <!-- inputan -->
+    <form action="">
+        <!-- input nama produk -->
+        <form class="product-name">
+            <label>Product Name :</label>
+            <input class="product-input" type="text" minlength="6" maxlength="50" required>
+        </form>
+    
+        <!-- input kategori -->
+        <form class="product-category">
+            <label>Product Category :</label>
+            <select class="category" required>
+                <option value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+            </select>
+        </form>
+    
+        <!-- input product freshness -->
+        <div class="product-freshness">
+            <label>Product Freshness :</label>
+            <form class="product-option">
+                <input type="radio" name="product" value="Brand New" required> Brand New <br>
+                <input type="radio" name="product" value="Second Hand"> Second Hand <br>
+                <input type="radio" name="product" value="Refurbished"> Refurbished <br>
+            </form>            
+        </div>
+        
+        <!-- input gambar produk -->
+        <div class="choose-image">
+            <label for="">Image of Product <button>Choose File</button> No file chosen</label>
+        </div>
+    
+        <!-- input deskripsi tambahan -->
+        <form>
+            <label for="">Additional Description</label>
+            <textarea rows="5" cols="30" required></textarea>
+        </form>
+    
+        <!-- input harga produk -->
+        <form class="price">
+            <label for="">Product Price :</label>
+            <input type="number" min="1" step="1" placeholder="$ 100" required>
+        </form>
+
+        <!-- button submit detail -->
+        <form class="submit">
+            <button type="submit">Submit</button>
+        </form>
+    </form>
+</body>
+</html>
