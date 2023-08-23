@@ -17,13 +17,13 @@
             font-size: 24px;
             font-weight: 400;
         }
-        form{
+        .form-group{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 4px;
         }
-        label, .product-freshness, .submit{
+        label, p, #product-category, .submit{
             color: #000;
             font-family: 'Times New Roman', Times, serif;
             font-size: 12px;
@@ -31,26 +31,13 @@
             font-weight: 400;
             padding-top: 6px;
         }
-        .product-input{
-            width: 159px;
-            height: 14px;
-            border: 0.5px solid #000;
-        }
-        .product-option{
-            display: block;
-            color: #000;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-        }
         select{
             width: 71px;
             height: 15px;
             flex-shrink: 0;
         }
 
-        .choose-image button, .submit button, .product-category option, .product-category .category{
+        .form-group button, .product-category option, .product-category{
             color: #000;
             font-family: 'Times New Roman', Times, serif;
             font-size: 12px;
@@ -58,12 +45,19 @@
             font-weight: 400;
             line-height: normal;
         }
-        .price input{
+        #product-price{
             width: 50px;
             border: 1px solid #000;
+            margin-bottom: 6px;
         }
-        .choose-image button, .submit button{
+        .form-group button{
             cursor: pointer;
+        }
+        .product-freshness label{
+            margin-top: -10px;
+        }
+        .product-freshness p{
+            margin-bottom: 0px;
         }
     </style>
 </head>
@@ -74,53 +68,60 @@
     <h2>Detail Product</h2>
 
     <!-- inputan -->
-    <form action="">
+    <form>
         <!-- input nama produk -->
-        <form class="product-name">
-            <label>Product Name :</label>
-            <input class="product-input" type="text" minlength="6" maxlength="50" required>
-        </form>
+        <div class="form-group">
+            <label for="product-name">Product Name :</label>
+            <input type="text" name="product-name" id="product-name" minlength="6" maxlength="50" required>
+        </div>
     
         <!-- input kategori -->
-        <form class="product-category">
-            <label>Product Category :</label>
-            <select class="category" required>
+        <div class="form-group">
+            <label for="product-category">Product Category :</label>
+            <select name="product-category" id="product-category" required>
+                <option value="" selected></option>
                 <option value="Category 1">Category 1</option>
                 <option value="Category 2">Category 2</option>
             </select>
-        </form>
+        </div>
     
         <!-- input product freshness -->
-        <div class="product-freshness">
-            <label>Product Freshness :</label>
-            <form class="product-option">
-                <input type="radio" name="product" value="Brand New" required> Brand New <br>
-                <input type="radio" name="product" value="Second Hand"> Second Hand <br>
-                <input type="radio" name="product" value="Refurbished"> Refurbished <br>
-            </form>            
+        <div class="form-group product-freshness">
+            <p>Product Freshness :</p>
+            <label for="brand-new">
+                <input type="radio" name="brand-new" value="Brand New" required> Brand New
+            </label>
+            <label for="second-hand">
+                <input type="radio" name="second-hand" value="Second Hand" required> Second Hand
+            </label>
+            <label for="refurbished">
+                <input type="radio" name="refurbished" value="Refurbished" required> Refurbished
+            </label>            
         </div>
         
         <!-- input gambar produk -->
-        <div class="choose-image">
-            <label for="">Image of Product <button>Choose File</button> No file chosen</label>
+        <div class="form-group">
+            <label for="product-image">Image of Product 
+                <input type="file" name="product-image" id="product-image">
+            </label>
         </div>
     
         <!-- input deskripsi tambahan -->
-        <form>
-            <label for="">Additional Description</label>
-            <textarea rows="5" cols="30" required></textarea>
-        </form>
+        <div class="form-group">
+            <label for="description">Additional Description</label>
+            <textarea name="description" id="description" rows="5" cols="30" required></textarea>
+        </div>
     
         <!-- input harga produk -->
-        <form class="price">
-            <label for="">Product Price :</label>
-            <input type="number" min="1" step="1" placeholder="$ 100" required>
-        </form>
+        <div class="form-group">
+            <label for="product-price">Product Price :</label>
+            <input type="number" name="product-price" id="product-price" min="1" step="1" placeholder="$ 100" required>
+        </div>
 
         <!-- button submit detail -->
-        <form class="submit">
+        <div class="form-group">
             <button type="submit">Submit</button>
-        </form>
+        </div>
     </form>
 </body>
 </html>
