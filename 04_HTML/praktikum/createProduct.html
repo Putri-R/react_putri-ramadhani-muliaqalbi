@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product Page</title>
+    <style>
+        h1{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-weight: 400;
+        }
+        h2{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+        label, p, #product-category, .submit{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 6px;
+        }
+        select{
+            width: 71px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        .form-group button, .product-category option, .product-category{
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        #product-price{
+            width: 50px;
+            border: 1px solid #000;
+            margin-bottom: 6px;
+        }
+        .form-group button{
+            cursor: pointer;
+        }
+        .product-freshness label{
+            margin-top: -10px;
+        }
+        .product-freshness p{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- judul utama -->
+    <h1>Create Product</h1>
+    <!-- judul -->
+    <h2>Detail Product</h2>
+
+    <!-- inputan -->
+    <form>
+        <!-- input nama produk -->
+        <div class="form-group">
+            <label for="product-name">Product Name :</label>
+            <input type="text" name="product-name" id="product-name" minlength="6" maxlength="50" required>
+        </div>
+    
+        <!-- input kategori -->
+        <div class="form-group">
+            <label for="product-category">Product Category :</label>
+            <select name="product-category" id="product-category" required>
+                <option value="" selected></option>
+                <option value="Category 1">Category 1</option>
+                <option value="Category 2">Category 2</option>
+            </select>
+        </div>
+    
+        <!-- input product freshness -->
+        <div class="form-group product-freshness">
+            <p>Product Freshness :</p>
+            <label for="brand-new">
+                <input type="radio" name="brand-new" value="Brand New" required> Brand New
+            </label>
+            <label for="second-hand">
+                <input type="radio" name="second-hand" value="Second Hand" required> Second Hand
+            </label>
+            <label for="refurbished">
+                <input type="radio" name="refurbished" value="Refurbished" required> Refurbished
+            </label>            
+        </div>
+        
+        <!-- input gambar produk -->
+        <div class="form-group">
+            <label for="product-image">Image of Product 
+                <input type="file" name="product-image" id="product-image">
+            </label>
+        </div>
+    
+        <!-- input deskripsi tambahan -->
+        <div class="form-group">
+            <label for="description">Additional Description</label>
+            <textarea name="description" id="description" rows="5" cols="30" required></textarea>
+        </div>
+    
+        <!-- input harga produk -->
+        <div class="form-group">
+            <label for="product-price">Product Price :</label>
+            <input type="number" name="product-price" id="product-price" min="1" step="1" placeholder="$ 100" required>
+        </div>
+
+        <!-- button submit detail -->
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
