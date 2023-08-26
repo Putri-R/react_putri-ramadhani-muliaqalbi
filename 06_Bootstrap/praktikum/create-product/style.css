@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Quicksand:wght@300;600&family=Roboto:wght@300;500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Quicksand:wght@300;600&family=Roboto:wght@300&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;500;700&display=swap');
+
+.navbar-brand {
+    color: var(--bs-dark, #212529);
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+.nav-pills{
+    color: var(--bs-blue, #0D6EFD);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.32px;
+}
+.main{ 
+    margin: 10px 252px 48px 252px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head img{
+    width: auto;
+    height: 37px;
+    flex-shrink: 0;
+    margin-top: 48px;
+}
+.head h1{
+    color: #212529;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38.4px; /* 123.871% */
+    margin-top: 23px;
+}
+.head p{
+    color: #212529;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px; /* 150% */
+    width: 921.419px;
+    margin-top: 8.39px;
+}
+form{
+    margin: 16px 140px 0px 140px;
+    width: 610px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+form h2{
+    color: #212529;
+    font-family: 'Roboto';
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px; /* 125.217% */
+    margin-top: 48px;
+}
+.mb-3 input {
+    width: 282px;
+    height: 36px;
+}
+.image-input{
+    margin-top: 33px;
+}
+.category{
+    width: 218px;
+}
+.product-freshness{
+    margin-top: 30px;
+}
+.category select{
+    margin-top: 12px;
+}
+.form-check{
+    margin-top: -33px;
+}
+.form-floating{
+    width: 603px;
+    height: 116px;
+}
+.product-description{
+    margin-top: 5.5px;
+}
+.product-price{
+    margin-top: 30px;
+}
+.product-price span{
+    background-color: white;
+}
+.input-group input{
+    display: flex;
+    width: 603px;
+    align-items: flex-start;
+}
+button{
+    width: 557px;
+    padding: 9px 209.408px 9px 209.592px;
+    border-radius: 4.8px;
+    border: 1px solid #0D6EFD;
+    margin: 138px 23px 23px 23px;
+}
