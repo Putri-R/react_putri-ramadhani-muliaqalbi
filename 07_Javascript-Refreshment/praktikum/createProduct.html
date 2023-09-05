@@ -165,17 +165,17 @@
             checkEmptyForm();
             checkProductName();
 
-            var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+            const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
             modal.show();
         }
 
         function toggleSubmitButton(disable) {
-            var submitButton = document.getElementById("submitbtn").value;
+            const submitButton = document.getElementById("submitbtn").value;
             submitButton.disabled = disable;
         }
         
         function checkProductName() {
-            var productName = document.getElementById("product-name").value;
+            const productName = document.getElementById("product-name").value;
           
             if (productName.length > 25) {
                 alert("Product Name must not exceed 25 characters");
@@ -189,8 +189,8 @@
         }
 
         function checkEmptyForm(){
-            var emptyProductName = document.getElementById("product-name").value;
-            var emptyProductPrice = document.getElementById("price").value;
+            const emptyProductName = document.getElementById("product-name").value;
+            const emptyProductPrice = document.getElementById("price").value;
 
             if(emptyProductName.trim() == "" || emptyProductPrice == ""){
                 alert("Please enter a valid data")
@@ -201,13 +201,13 @@
         }
 
         function validationForm(){
-            var productName = document.getElementById("product-name").value;
-            var productCategory = document.getElementById("product-category").value;
-            var productImage = document.getElementById("product-image").value;
-            var productfreshness = document.querySelector('input[name="flexRadioDefault"]:checked');
-            var productDescription = document.getElementById("floatingTextarea2").value;
-            var productPrice = document.getElementById("price").value;
-            var submitButton = document.getElementById("submitbtn");
+            const productName = document.getElementById("product-name").value;
+            const productCategory = document.getElementById("product-category").value;
+            const productImage = document.getElementById("product-image").value;
+            const productfreshness = document.querySelector('input[name="flexRadioDefault"]:checked');
+            const productDescription = document.getElementById("floatingTextarea2").value;
+            const productPrice = document.getElementById("price").value;
+            const submitButton = document.getElementById("submitbtn");
 
             if (productName.trim() == "") {
                 alert("The Product Name field must be filled in");
@@ -233,16 +233,16 @@
         }
 
         function submitConfirmed() {
-            var submitData = document.getElementById("submittedData");
+            const submitData = document.getElementById("submittedData");
             
-            var productName = document.getElementById("product-name").value;
-            var productCategory = document.getElementById("product-category").value;
-            var productImage = document.getElementById("product-image").value;
-            var productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
-            var productDescription = document.getElementById("floatingTextarea2").value;
-            var productPrice = document.getElementById("price").value;
+            const productName = document.getElementById("product-name").value;
+            const productCategory = document.getElementById("product-category").value;
+            const productImage = document.getElementById("product-image").value;
+            const productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
+            const productDescription = document.getElementById("floatingTextarea2").value;
+            const productPrice = document.getElementById("price").value;
 
-            var dataConfirmed = `
+            const dataConfirmed = `
                 <p><strong>Product Name:</strong> ${productName}</p>
                 <p><strong>Product Category:</strong> ${productCategory}</p>
                 <p><strong>Product Freshness:</strong> ${productFreshness}</p>
