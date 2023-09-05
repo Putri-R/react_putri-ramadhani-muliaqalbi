@@ -5,12 +5,12 @@ function submitForm(){
 }
 
 function toggleSubmitButton(disable) {
-    var submitButton = document.getElementById("submitbtn").value;
+    const submitButton = document.getElementById("submitbtn").value;
     submitButton.disabled = disable;
 }
 
 function checkProductName() {
-    var productName = document.getElementById("product-name").value;
+    const productName = document.getElementById("product-name").value;
   
     if (productName.length > 25) {
         alert("Product Name must not exceed 25 characters");
@@ -24,8 +24,8 @@ function checkProductName() {
 }
 
 function checkEmptyForm(){
-    var emptyProductName = document.getElementById("product-name").value;
-    var emptyProductPrice = document.getElementById("price").value;
+    const emptyProductName = document.getElementById("product-name").value;
+    const emptyProductPrice = document.getElementById("price").value;
 
     if(emptyProductName.trim() == "" || emptyProductPrice == ""){
         alert("Please enter a valid data")
@@ -36,13 +36,13 @@ function checkEmptyForm(){
 }
 
 function validationForm(){
-    var productName = document.getElementById("product-name").value;
-    var productCategory = document.getElementById("product-category").value;
-    var productImage = document.getElementById("product-image").value;
-    var productfreshness = document.querySelector('input[name="flexRadioDefault"]:checked');
-    var productDescription = document.getElementById("floatingTextarea2").value;
-    var productPrice = document.getElementById("price").value;
-    var submitButton = document.getElementById("submitbtn");
+    const productName = document.getElementById("product-name").value;
+    const productCategory = document.getElementById("product-category").value;
+    const productImage = document.getElementById("product-image").value;
+    const productfreshness = document.querySelector('input[name="flexRadioDefault"]:checked');
+    const productDescription = document.getElementById("floatingTextarea2").value;
+    const productPrice = document.getElementById("price").value;
+    const submitButton = document.getElementById("submitbtn");
 
     if (productName.trim() == "") {
         alert("The Product Name field must be filled in");
@@ -68,16 +68,16 @@ function validationForm(){
 }
 
 function submitConfirmed() {
-    var submitData = document.getElementById("submittedData");
+    const submitData = document.getElementById("submittedData");
     
-    var productName = document.getElementById("product-name").value;
-    var productCategory = document.getElementById("product-category").value;
-    var productImage = document.getElementById("product-image").value;
-    var productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
-    var productDescription = document.getElementById("floatingTextarea2").value;
-    var productPrice = document.getElementById("price").value;
+    const productName = document.getElementById("product-name").value;
+    const productCategory = document.getElementById("product-category").value;
+    const productImage = document.getElementById("product-image").value;
+    const productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
+    const productDescription = document.getElementById("floatingTextarea2").value;
+    const productPrice = document.getElementById("price").value;
 
-    var dataConfirmed = `
+    const dataConfirmed = `
         <p><strong>Product Name:</strong> ${productName}</p>
         <p><strong>Product Category:</strong> ${productCategory}</p>
         <p><strong>Product Freshness:</strong> ${productFreshness}</p>
@@ -88,34 +88,34 @@ function submitConfirmed() {
     
     submitData.innerHTML = dataConfirmed;
 
-    var modalYesButton = document.getElementById("modalYesButton");
+    const modalYesButton = document.getElementById("modalYesButton");
     modalYesButton.addEventListener("click", function () {
         tableData();
         modal.hide();
     });
 
-    var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+    const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
     modal.show();
 }
 
 function tableData(){
-    var productName = document.getElementById("product-name").value;
-    var productCategory = document.getElementById("product-category").value;
-    var productImage = document.getElementById("product-image").value;
-    var productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
-    var productDescription = document.getElementById("floatingTextarea2").value;
-    var productPrice = document.getElementById("price").value;
+    const productName = document.getElementById("product-name").value;
+    const productCategory = document.getElementById("product-category").value;
+    const productImage = document.getElementById("product-image").value;
+    const productFreshness = document.querySelector('input[name="flexRadioDefault"]:checked').value;
+    const productDescription = document.getElementById("floatingTextarea2").value;
+    const productPrice = document.getElementById("price").value;
 
-    var table = document.getElementById("product-table");
+    const table = document.getElementById("product-table");
 
-    var newRow = table.insertRow(-1);
+    const newRow = table.insertRow(-1);
 
-    var cell1 = newRow.insertCell(0);
-    var cell2 = newRow.insertCell(1);
-    var cell3 = newRow.insertCell(2);
-    var cell4 = newRow.insertCell(3);
-    var cell5 = newRow.insertCell(4);
-    var cell6 = newRow.insertCell(5);
+    const cell1 = newRow.insertCell(0);
+    const cell2 = newRow.insertCell(1);
+    const cell3 = newRow.insertCell(2);
+    const cell4 = newRow.insertCell(3);
+    const cell5 = newRow.insertCell(4);
+    const cell6 = newRow.insertCell(5);
 
     // Masukkan teks node ke dalam sel-sel tabel
     cell1.innerHTML = productName;
@@ -125,15 +125,15 @@ function tableData(){
     cell5.innerHTML = productDescription;
     cell6.innerHTML = "$" + productPrice;
 
-    var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+    const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
     modal.hide();
 
     submitData.innerHTML = "";
 }
 
 function deletebtn() {
-    var tabel = document.getElementById('product-table');
-    var rowCount = tabel.rows.length;
+    const tabel = document.getElementById('product-table');
+    const rowCount = tabel.rows.length;
 
     if (rowCount > 1) {
         tabel.deleteRow(rowCount - 1);
@@ -143,25 +143,25 @@ function deletebtn() {
 }
 
 function searchProducts() {
-    var searchInput = document.getElementById('searchInput');
-    var productTable = document.getElementById('product-table');
-    var searchText = searchInput.value.toLowerCase();
-    var productFound = false;
+    const searchInput = document.getElementById('searchInput');
+    const productTable = document.getElementById('product-table');
+    const searchText = searchInput.value.toLowerCase();
+    let productFound = false;
 
-    for (var i = 1; i < productTable.rows.length; i++) {
-        var productName = productTable.rows[i].cells[0].textContent.toLowerCase();
+    for (const i = 1; i < productTable.rows.length; i++) {
+        const productName = productTable.rows[i].cells[0].textContent.toLowerCase();
 
         if (productName.includes(searchText)) {
             productFound = true;
 
             // Menampilkan rincian produk dalam alert
-            var productCategory = productTable.rows[i].cells[1].textContent;
-            var productImage = productTable.rows[i].cells[2].textContent;
-            var productFreshness = productTable.rows[i].cells[3].textContent;
-            var productDescription = productTable.rows[i].cells[4].textContent;
-            var productPrice = productTable.rows[i].cells[5].textContent;
+            const productCategory = productTable.rows[i].cells[1].textContent;
+            const productImage = productTable.rows[i].cells[2].textContent;
+            const productFreshness = productTable.rows[i].cells[3].textContent;
+            const productDescription = productTable.rows[i].cells[4].textContent;
+            const productPrice = productTable.rows[i].cells[5].textContent;
 
-            var productDetails = `
+            const productDetails = `
                 Product Name             : ${productName}
                 Product Category         : ${productCategory}
                 Image of Product         : ${productImage}
