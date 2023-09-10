@@ -1,6 +1,6 @@
 Summary_Materi Introduction React
 
-1. ReactJS adalah sebuah library JavaScript untuk membuat User Interface. Fungsi utama pengimplementasikan JavaScript adalah untuk membuat halaman aplikasi web menjadi interaktif.
+1. React JS adalah sebuah library JavaScript untuk membuat User Interface. Fungsi utama pengimplementasikan JavaScript adalah untuk membuat halaman aplikasi web menjadi interaktif.
 
 Mengapa menggunakan React?
     •	Deklaratif, yaitu salah satu pendekatan dalam coding yang berfokus kepada yang ingin dicapai (tanpa perlu menjelaskan setiap tahapan       implementasi).
