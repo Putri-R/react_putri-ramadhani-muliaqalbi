@@ -28,8 +28,7 @@ export default function SetupRouters() {
             localStorage.getItem("isLoggedIn") === "true" ? (
               <CreateProduct />
             ) : (
-              // <Navigate to="/login-page" />
-              <CreateProduct />
+              <Navigate to="/login-page" />
             )
           }
         />
