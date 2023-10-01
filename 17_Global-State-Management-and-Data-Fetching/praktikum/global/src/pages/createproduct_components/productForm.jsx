@@ -398,49 +398,7 @@ export default function ProductForm() {
                 </div>
             </>
             )}
-            {/* <div className="modal fade" id="exampleModal" tabid={-1} aria-labelledby="exampleModalLabel" aria-hidden="true" show={showModal}>
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">
-                                Confirm your data
-                            </h5>
-                            <button
-                                type="button"
-                                className="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-                                onClick={() => setShowModal(false)} // Menutup modal saat tombol close diklik
-                            />
-                        </div>
-                        <div className="modal-body" id="submittedData">
-                            Are you sure the data you submitted is correct?
-                        </div>
-                        <div className="modal-footer">
-                            <button
-                                type="button"
-                                className="btn btn-secondary"
-                                data-bs-dismiss="modal"
-                                onClick={() => setShowModal(false)} // Menutup modal saat tombol "No" diklik
-                            >
-                                No
-                            </button>
-                            <button
-                                type="button"
-                                className="btn btn-primary"
-                                id="modalYesButton"
-                                data-bs-dismiss="modal"
-                                onClick={() => {
-                                    setShowModal(false);
-                                }}
-                            >
-                                Yes
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
+            
             {/* Edit mode: menampilkan data di dalam form */}
             {editingItem && (
                 <>
