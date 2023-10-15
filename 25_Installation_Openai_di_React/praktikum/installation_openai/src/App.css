@@ -1,0 +1,24 @@
+.form {
+  width: 100%;
+}
+
+.content-group{
+  padding: 30px;
+  background-color: hsl(277, 100%, 88%);
+  border-radius: 20px;
+}
+
+.content-group h3{
+  padding: 15px;
+  background-color: hsl(265, 100%, 58%);
+  border-radius: 10px;
+  color: white;
+}
+
+.result{
+  background-color: white;
+  border-radius: 20px;
+  width: 600px;
+  padding: 10px;
+  margin-top: 30px;
+}
