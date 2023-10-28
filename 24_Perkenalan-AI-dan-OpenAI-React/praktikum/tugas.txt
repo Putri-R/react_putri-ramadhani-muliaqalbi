@@ -1,0 +1,18 @@
+Tugas : no. 4 Mengopi input output ke file .txt
+
+A. Instruksi Tugas :
+- Praktikkan penggunakan OpenAI Playground
+- Bisa menggunakan salah satu template yang ada di platform.openai.com/examples
+- Screenshot hasilnya (pastikan semua yang ada di layar masuk ke dalam screenshot)
+- Copy-paste input & output (text yang ada di dalam textbox) ke file txt
+- Kumpulkan hasil screenshot dan file txt seperti biasa
+
+B. Jawaban Tugas (copy paste input output)
+
+USER : I have so much books and its so heavy
+ASSISTANT : I have so many books and they are so heavy.
+
+USER : I think its gonna rain today
+ASSISTANT : I think it's going to rain today.
+
+Link Google Docs : https://docs.google.com/document/d/1snCmwKgi3bdKSPzxQt3NgY50ZGVBY9HjfgYlI9bGILk/edit?usp=sharing
